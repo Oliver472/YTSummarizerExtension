@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YoutubeTranscribe",
+  "description": "Chrome extension to transcribe YouTube videos",
+  "options_page": "options.html",
+  "background": { "service_worker": "background.bundle.js" },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["scripting", "tabs", "activeTab", "storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["contentScript.bundle.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "devtools_page": "devtools.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["content.styles.css"],
+      "matches": []
+    }
+  ]
+}
