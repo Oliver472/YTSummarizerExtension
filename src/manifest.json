@@ -5,11 +5,14 @@
   "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon-128.png"
   },
   "permissions": ["scripting", "tabs", "activeTab", "storage"],
   "host_permissions": ["https://www.youtube.com/*"],
-  "icons": {},
+  "icons": {
+    "128": "icon-128.png"
+  },
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
@@ -20,7 +23,7 @@
   "devtools_page": "devtools.html",
   "web_accessible_resources": [
     {
-      "resources": ["content.styles.css"],
+      "resources": ["content.styles.css", "icon-128.png", "icon-34.png"],
       "matches": []
     }
   ]

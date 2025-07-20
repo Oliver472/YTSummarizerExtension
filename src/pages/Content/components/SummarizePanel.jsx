@@ -65,7 +65,7 @@ function SummarizePanel() {
   return (
     <div
       id="summarize-container"
-      className="flex flex-col  mt-4 p-3 bg-white border border-gray-300 rounded-lg shadow transition-all duration-300 ease-in-out w-full"
+      className="flex flex-col w-full mt-4 p-3 mb-4 bg-white border border-gray-300 rounded-lg shadow transition-all duration-300 ease-in-out "
     >
       {step === 'idle' && (
         <button
@@ -103,7 +103,7 @@ function SummarizePanel() {
                 <div
                   key={lang}
                   onClick={() => setLanguage(lang)}
-                  className={`w-full border p-2 rounded-md flex justify-center items-center text-center cursor-pointer transition-all hover:shadow-lg ${
+                  className={`w-full  p-2 rounded-md flex justify-center items-center text-center cursor-pointer transition-all hover:shadow-lg btn ${
                     language === lang ? 'bg-gray-200' : ''
                   }`}
                 >
