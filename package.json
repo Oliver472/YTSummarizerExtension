@@ -1,7 +1,7 @@
 {
-  "name": "YouTubeTranscribe",
+  "name": "YoutubeSummarizer",
   "version": "1.0",
-  "description": " chrome extension to transcribe YT videos",
+  "description": " chrome extension to summarize YT videos",
   "license": "MIT",
   "repository": {
     "type": "git",

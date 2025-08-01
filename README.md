@@ -1,6 +1,6 @@
 # Youtube summarizer extension
 
-YTSummarizerExtension is a browser extension designed to provide users with quick and accurate summaries for YouTube videos. By leveraging AI-powered summarization, this extension helps users save time by condensing lengthy video content into concise, actionable insights.
+YoutubeSummarizer is a browser extension designed to provide users with quick and accurate summaries for YouTube videos. By leveraging AI-powered summarization, this extension helps users save time by condensing lengthy video content into concise, actionable insights.
 
 ## Features
 
