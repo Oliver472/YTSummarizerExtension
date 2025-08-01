@@ -2,10 +2,8 @@
   "manifest_version": 3,
   "name": "YoutubeTranscribe",
   "description": "Chrome extension to transcribe YouTube videos",
-  "options_page": "options.html",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
-    "default_popup": "popup.html",
     "default_icon": "icon-128.png"
   },
   "permissions": ["scripting", "tabs", "activeTab", "storage"],

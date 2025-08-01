@@ -24,4 +24,4 @@ function renderComponent() {
   currentVideoId = videoId;
 }
 
-setInterval(renderComponent, 1000); // Poll every second
+setInterval(renderComponent, 1000);

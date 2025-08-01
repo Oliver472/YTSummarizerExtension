@@ -3,7 +3,7 @@ import axios from 'axios';
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (msg.type === 'GET_TRANSCRIPT') {
     axios
-      .get('https://89874309c323.ngrok-free.app/api/v1/summarize', {
+      .get('https://fd0bd6a97d51.ngrok-free.app/api/v1/summarize', {
         params: {
           video_id: msg.videoId,
           lang: msg.language,
